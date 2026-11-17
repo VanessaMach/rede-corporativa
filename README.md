@@ -22,7 +22,7 @@ a comunicação entre VLANs e o controle de acesso.
 A rede é composta por um roteador, dois switches e três computadores.
 O roteador realiza a comunicação entre as redes dos departamentos.
 
-![Topologia da rede corporativa](imagens/topologia.png)
+![Topologia da rede corporativa](rede-corporativa/imagens/topologia.png)
 
 ## Organização da rede
 
@@ -37,7 +37,7 @@ O roteador realiza a comunicação entre as redes dos departamentos.
 O comando `show vlan brief` mostra as VLANs criadas no SW1 e as portas
 associadas aos computadores do Administrativo e do Financeiro.
 
-![VLANs configuradas no SW1](imagens/vlans-sw1.png)
+![VLANs configuradas no SW1](rede-corporativa/imagens/vlans-sw1.png)
 
 ## Configurações realizadas
 
@@ -54,7 +54,7 @@ associadas aos computadores do Administrativo e do Financeiro.
 O computador do Financeiro recebeu automaticamente o endereço
 `192.168.20.11`, a máscara `255.255.255.0` e o gateway `192.168.20.1`.
 
-![Configuração DHCP do computador do Financeiro](imagens/dhcp.png)
+![Configuração DHCP do computador do Financeiro](rede-corporativa/imagens/dhcp.png)
 
 O laboratório não utiliza um servidor DNS; os testes abaixo foram
 realizados diretamente pelos endereços IP.
@@ -76,20 +76,21 @@ Os testes foram realizados com o comando `ping` no Packet Tracer.
 O computador do Administrativo conseguiu alcançar o gateway,
 o computador do Financeiro e o computador da TI.
 
-![Pings do Administrativo antes da ACL](imagens/ping-administrativo-antes-acl.jpeg)
+![Pings do Administrativo antes da ACL](rede-corporativa/imagens/ping-administrativo-antes-acl.jpeg)
 
 ### Após a ACL
 
 O ping do Administrativo para o Financeiro não foi concluído.
 Os testes do Administrativo para a TI e para seu gateway receberam resposta.
 
-![Pings do Administrativo após a ACL](imagens/ping-administrativo-apos-acl.jpeg)
+![Pings do Administrativo após a ACL](rede-corporativa/imagens/ping-administrativo-apos-acl.jpeg)
 
 ### Comunicação da TI com o Financeiro
 
 O computador da TI conseguiu se comunicar com o computador do Financeiro.
 
-![Ping da TI para o Financeiro](imagens/ping-ti-financeiro-permitido.jpeg)
+![Ping da TI para o Financeiro](rede-corporativa/imagens/ping-ti-financeiro-permitido.jpeg)
+
 
 ## Aprendizados
 
